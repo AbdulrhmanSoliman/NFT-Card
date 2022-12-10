@@ -1,0 +1,105 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {background-color: hsl(217, 54%, 11%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 15px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+.photo{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 8px;
+}
+.text{
+    width: 251px;
+    color: hsl(216deg 23% 57%);
+    font-family: 'Outfit', sans-serif;
+}
+h1{
+    font-size: 18px;
+    color: white;
+    margin-top: 18px;
+    font-weight: 600;
+}
+hr{
+    border-style: solid;
+    border-color: hsl(215, 32%, 27%) transparent transparent transparent;
+    margin-top: 18px;
+    margin: 18px 0 0 0;
+}
+p{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 10px 0;
+}
+span{
+    font-size: 14px;
+}
+.num{
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.time{
+    float: right;
+}
+svg{transform: translate(-2px, 4px);}
+.avatar{
+    width: 30px;
+    height: 30px;
+    transform: translate(-2px, 9px);
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.name{
+    color: white;
+}
+.test::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    opacity: 0%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.test:hover::before{
+    opacity: 50%;
+}
+.test::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-image: url('../images/icon-view.svg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    margin-left: -250px;
+    opacity: 0%;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.test:hover::after{
+    opacity: 100%;
+}
+.name:hover, h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
